@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Center Box</title>
+	<style>
+		*{padding: 0;margin: 0;box-sizing:border-box;}
+
+		html,body{height: 100%;}
+
+		.container{
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#008dab), to(#007294)); 
+			height: 100%;
+			position: relative;
+		}
+
+		.centerbox{
+			width: 50%;
+			text-align: left;
+			background: rgba(0,0,0,0.1);
+			color: #fff;
+			box-shadow: inset 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0,0,0,0.10);
+			border: solid 1px #006e8b;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.centerbox h1, .centerbox p{padding: 1em}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="centerbox">
+			<h1>Center Box</h1>
+			<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor mollitia eveniet repudiandae suscipit beatae dignissimos? Adipisci enim laboriosam voluptatem officia! Error, expedita consequuntur ducimus impedit temporibus voluptas maxime quas.</span>
+				<span>Facere architecto odio consequuntur minus exercitationem amet quod molestias officia, nisi error magni cupiditate omnis asperiores sapiente impedit aliquid quisquam cumque repellendus neque. Eum consequuntur quos, quae dolorem at quasi?</span>
+				<span>Corporis labore, nobis repellat animi, molestias voluptatem facere, reiciendis iure at commodi sit neque nihil molestiae quos! Dolor explicabo voluptatibus nulla ab officia, soluta, nesciunt aperiam nostrum dolorem corrupti, minus.</span>
+				
+			</p>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.centerbox.js"></script>
+	<script>
+	$(function(){
+		$(".container").centerbox();
+	});
+	</script>
+</body>
+</html>
